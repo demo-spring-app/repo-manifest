@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata: 
+  name: springboot-app
+spec: 
+  project: default
+  destination: 
+    server: https://kubernetes.default.svc
+    namespace: default
+  source:
+    repoURL: https://github.com/demo-spring-app/repo-manifest.git
+    path: k8
+    targetRevision: main
