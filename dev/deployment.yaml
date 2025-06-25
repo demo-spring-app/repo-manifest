@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy-spring-app
+spec:
+  template:
+    metadata:
+      labels:
+        app: pod-spring-app
+    spec:
+      containers:
+        - name: springapp-c
+          image: vinukavinnath/hellospringboot:IMAGE_TAG_PLACEHOLDER
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9090
+  selector:
+    matchLabels:
+      app: pod-spring-app
+  replicas: 2
+
