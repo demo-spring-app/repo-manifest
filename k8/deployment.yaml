@@ -17,5 +17,5 @@ spec:
   selector:
     matchLabels:
       app: pod-spring-app
-  replicas: 2
+  replicas: 3
 
