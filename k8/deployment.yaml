@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
         - name: springapp-c
-          image: vinukavinnath/hellospringboot:IMAGE_TAG_PLACEHOLDER
+          image: vinukavinnath/hellospringboot:v9b5ffb8
           imagePullPolicy: Always
           ports:
             - containerPort: 9090
