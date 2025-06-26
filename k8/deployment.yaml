@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
         - name: springapp-c
-          image: vinukavinnath/hellospringboot:veaad11a
+          image: vinukavinnath/hellospringboot:v9e6fb79
           imagePullPolicy: Always
           ports:
             - containerPort: 9090
